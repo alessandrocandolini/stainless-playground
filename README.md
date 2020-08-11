@@ -4,7 +4,7 @@ https://stainless.epfl.ch/ is a promising tool for formal verification of Scala 
 
 ## Motivations
 
-Formal verification has the reputation of being not cost-effective enough to justify its usage when it comes to prove correctness of software systems, particularly when the software in question is not either mission or life critical.
+Formal verification has the reputation of being not cost-effective enough to justify its business usage when it comes to prove correctness of software systems, particularly when the software in question is not either mission or life critical.
 Depending on the needs, other techniques works "well enough" as cheaper surrogates of formal methods, including if/when applicable:
 * example-based testing (any kind of: manual, automated, unit, integration, UI, E2E, functional, TDD, BDD, etc),
 * property based testing,
@@ -15,7 +15,7 @@ Depending on the needs, other techniques works "well enough" as cheaper surrogat
 
 These and other techniques have proved to be a valuable and more affordable alternative for detecting and preventing effectively whole categories of bugs in real-life software projects, without incurring the extra overhead, complexity and maintenance costs associated to formal methods. 
 
-For cases when none of aforementioned techniques is powerful enough (eg, concorrecy), formal modelling by using specification languages like TLA+ can come to the rescue and assistence in preventing design mistakes that would translate directly into more subtle pitfalls in the code. Formal specification has the additional advantage to provide a way to precisely think about the software, above the code level.  
+For cases when none of aforementioned techniques is powerful enough (eg, concorrecy), formal modelling by using specification languages like TLA+ can come to the rescue and assistence in preventing design mistakes that would translate directly into more subtle pitfalls in the code. Formal specification has the additional advantage to provide a way to precisely think about the software, above the code level. This is a huge advantage when it comes to design, the general question on whether and how to prove adherence of the software implementation to a TLA spec (and ultimately whether this approach even makes sense conceptually, considering the fact that TLA+ operates at a different, higher, level of abstraction) remains largely unanswered though.
 
 The practical usefulness of formal verification in real-life sofware is also sometimes questioned based on the observations that formal methods themselves, despite their costs, cannot guarantee bullet-proof correctness in real cases.
 Despite their cost, their uselefulness seems bound by several conditions, including (but not only): 
