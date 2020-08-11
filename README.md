@@ -1,6 +1,6 @@
 # stainless-playground
 
-https://stainless.epfl.ch/ is a promising tool for formal verification of Scala programs, and this project is a simple playground to start exploring stainless capabilities and ergonomics. 
+https://stainless.epfl.ch/ is a promising tool for formal verification of programs written in (a subset of) the Scala programming language, and this project is a simple playground to start exploring stainless capabilities and ergonomics, and whether/how it can fit into larger scale projects.
 
 ## Motivations
 
