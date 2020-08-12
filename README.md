@@ -5,7 +5,7 @@ https://stainless.epfl.ch/ is a promising tool for formal verification of progra
 ## Motivations
 
 Formal verification has the reputation of being not cost-effective enough to justify its business usage when it comes to prove correctness of software systems, particularly when the software in question is not either mission or life critical.
-Depending on the needs, other techniques works "well enough" as cheaper surrogates of formal methods, including if/when applicable:
+Depending on the needs, other techniques works "well enough" as cheaper surrogates of formal methods, including if/when applicable a combination of:
 * example-based testing (any kind of: manual, automated, unit, integration, UI, E2E, functional, TDD, BDD, etc),
 * property based testing,
 * linters and code analysers, 
