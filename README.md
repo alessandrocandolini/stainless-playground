@@ -38,5 +38,12 @@ Software engineers needs cheap but powerful tools that allow them to deliver hig
 Companies often needs quality & speed. 
 Knowing formal methods can be another weapon in the toolkit that sometimes can make the difference. 
 
+## How to run the playground
+
+The playground is a simple `sbt` scala project. Stainless comes either as a stand-alone CLI tool or as a sbt plugin. This project uses the sbt plugin.  (Notice: The sbt plugin currently does not support dotty though: https://github.com/epfl-lara/stainless/issues/178) 
+When executing sbt `compile` on a module where the `StainlessPlugin` is enabled (eg, the `verified` module in this project(, Stainless will check the scala code and report compilation errors if some of the properties are not verified. 
+
+
+
 
 
