@@ -1,5 +1,3 @@
-ThisBuild / version      := "0.1.0-SNAPSHOT"
-ThisBuild / organization := "com.example"
 ThisBuild / scalaVersion := "2.12.9"
 
 lazy val core = project

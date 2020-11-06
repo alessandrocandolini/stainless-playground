@@ -11,6 +11,10 @@ object verified {
   def f =
     Positive(1)
 
+  def filterStringA(s : String) : Option[String] = {
+    Some(s)
+  } ensuring(_ != Some("A")) // this should return invalid with Princess, instead it returns UNKNOWN 
+
   def g : String => Option[NonEmptyString] =
     s =>
       Some(s).filter(s => s!="").map(s => NonEmptyString(s))
@@ -26,4 +30,13 @@ final case class NonEmptyString(value: String) extends AnyVal {
   @invariant
   def nonEmpty: Boolean = value != ""
 }
+
+object NonEmptyString {
+
+  def fromString : String => Option[NonEmptyString] = s => s match {
+    case "" => None[NonEmptyString]
+    case s => Some(NonEmptyString(s))
+  }
+
+}  
 
